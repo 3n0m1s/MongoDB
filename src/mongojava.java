@@ -13,7 +13,7 @@ public class mongojava {
 	
 	public static void connect() {
 	
-		 MongoClientURI connectionString = new MongoClientURI("mongodb://mimonenew:mimonenewpass@www.epocum.com:27017");
+		 MongoClientURI connectionString = new MongoClientURI("mongodb://user:pass@www.epocum.com:27017");
 		 MongoClient mongo = new MongoClient(connectionString);
 		 MongoDatabase database = mongo.getDatabase("admin");
 		 MongoCollection<Document> collection = database.getCollection("persone");
